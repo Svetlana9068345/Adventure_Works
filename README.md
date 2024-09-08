@@ -1,15 +1,18 @@
 # Adventure_Works
-# Airlines-Dashboard
 
-### Dashboard Link : https://app.powerbi.com/groups/me/reports/384d017e-e935-44dc-9e7d-1626c1a36de1/ReportSection
+### Dashboard Link : 
 
-## Problem Statement
+## Постановка задачи
 
-This dashboard helps the airlines understand their customers better. It helps the airlines know if their customers are satisfied with their services. Through different ratings, they get to know their improvement area, & thus they can improve their services by identifying these area. It also lets them know the average delay & departure time, thus since by using this dashboard they have identified this problem, they can further work on factors responsible for these unwanted delays.
+Эта информационная панель помогает компании:
+- отслеживать товары, каких категорий и подкатегорий клиенты заказывали чаще всего;
+- увидеть основные показатели эффективности бизнеса – доход, количество заказов и возвраты за текущий месяц;
+- вывести топ-1 продукт по количеству заказов и топ-1 продукт, который приносит больше всего прибыли. Это могут быть два разных продукта;
+- проанализировать каждый конкретный продукт: был ли выполнен поставленный план по кол-ву заказов, доходу и не превышен ли лимит по возвратам для данного товара;
+- увидеть тенденцию по прибыли по неделям и прогноз на будущее для конкретного товара;
+- отслеживать какие клиенты принесли больше всего прибыли, а также к какой демографической группе относятся данные покупатели;
+- увидеть возвраты топовых клиентов.
 
-Since, number of neutral/dissatisfied customers (almost 57 %) are more than satisfied customers (around 43 %), thus in all they must work on improving their services. 
-
-Also since average delay in arrival & departure both is 15 minutes, thus they must try to reduce it.
 
 
 ### Steps followed 

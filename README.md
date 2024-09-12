@@ -24,7 +24,14 @@
 
 ### Меры DAX
 
-### Скрины дашборда
+### Описание дашборда
+
+#Лист Executive Summary
+1)Логотип компании
+2) Срез
+ 
+![Dashboard_upload](https://user-images.githubusercontent.com/102996550/174074051-4f08287a-0568-4fdf-8ac9-6762e0d8fa94.jpg)
+
 ### Инсайды
 
 for creating new column following DAX expression was written;

@@ -26,7 +26,7 @@
 
 ### Описание дашборда
 
-#Лист Executive Summary
+Лист Executive Summary
 1)Логотип компании
 2) Срез
  

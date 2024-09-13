@@ -40,7 +40,7 @@
 - 11 Топ продукт по доходам за промежуток, выбранный в фильтре
 - 12 Визуальный элемент карта позволяет фильтровать данные по континентам
 
-![Dashboard_upload](https://user-images.githubusercontent.com/102996550/174074051-4f08287a-0568-4fdf-8ac9-6762e0d8fa94.jpg)
+![Executive Summary](https://github.com/user-attachments/assets/37cfd024-d48e-427b-92c4-15fe0bf04ed5)
 
 Лист "Product Details"
 - 1 Карточка показывает товар, который был выбран на предыдущем листе

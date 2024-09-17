@@ -21,6 +21,23 @@
 - Шаг 4 : Создание интерактивного отчета для анализа и визуализации данных.
 
 ### Меры DAX
+## AW_Returns
+Return Cases - считает кол-во случаев возвратов. Рассчитывается по формуле: COUNTROWS(AW_Returns)
+Total Returns - считает кол-во возвращенных товаров (один и тот же товар мог быть возвращен с одной и той же территории несколько раз за день. Рассчитывается по формуле: SUM(AW_Returns[ReturnQuantity])
+Prev Month Returns - считает кол-во случаев возвратов за предыдущий месяц. Рассчитывается по формуле: CALCULATE(AW_Returns[Return Cases], DATEADD(AW_Calendar_Lookup[Date], -1,MONTH))
+ALL Returns - считает кол-во всех возвратов. Рассчитывается по формуле: CALCULATE([Return Cases],ALL(AW_Returns))
+% of All Returns - считает процент от всех возвратов. Рассчитывается по формуле: AW_Returns[Return Cases]/AW_Returns[ALL Returns]
+Return Rate - считает доходность. Рассчитывается по формуле: DIVIDE(AW_Returns[Total Returns], AW_Sales[Quantity Sold], "Нет продаж")
+## AW_Sales
+Quantity Sold - считает кол-во проданных товаров (в одном заказе может быть несколько товаров). Рассчитывается по формуле:= SUM(AW_Sales[OrderQuantity])
+Order Cases - считает кол-во случаев покупок(заказов). Рассчитывается по формуле: DISTINCTCOUNT(AW_Sales[OrderNumber])
+Order Target = [Prev Month Orders]*1.1
+Prev Month Orders - считает кол-во случаев заказов (покупок) за предыдущий месяц. Рассчитывается по формуле: CALCULATE([Order Cases], DATEADD(AW_Calendar_Lookup[Date], -1, MONTH))
+Revenue - расчитываем доход. Рассчитывается по формуле: SUMX(AW_Sales, AW_Sales[OrderQuantity]* RELATED(AW_Products_Lookup[ProductPrice]))
+Revenue Previous month - расчитываем доход за предыдущий месяц. Рассчитывается по формуле: CALCULATE(AW_Sales[Revenue], DATEADD(AW_Calendar_Lookup[Date],-1,MONTH))
+Revenue 10% - расчитывает цель, которую мы должны достичь в текущем месяце. В текущем месяце доход должен быть на 10% больше, чев в предыдущем месяце. Рассчитывается по формуле: AW_Sales[Revenue Previous month]*1.1
+Total Cost - расчитываем цену заказа. Рассчитывается по формуле:SUMX(AW_Sales, AW_Sales[OrderQuantity]* RELATED(AW_Products_Lookup[ProductCost]))
+Total Profit - рассчитываем выручку. Рассчитывается по формуле: AW_Sales[Revenue] - [Total Cost]
 
 ### Описание дашборда
 

@@ -29,7 +29,7 @@
 - % of All Returns - считает процент от всех возвратов. Рассчитывается по формуле: AW_Returns[Return Cases]/AW_Returns[ALL Returns]
 - Return Rate - считает доходность. Рассчитывается по формуле: DIVIDE(AW_Returns[Total Returns], AW_Sales[Quantity Sold], "Нет продаж")
 ## AW_Sales
-- Quantity Sold - считает кол-во проданных товаров (в одном заказе может быть несколько товаров). Рассчитывается по формуле:= - SUM(AW_Sales[OrderQuantity])
+- Quantity Sold - считает кол-во проданных товаров (в одном заказе может быть несколько товаров). Рассчитывается по формуле:SUM(AW_Sales[OrderQuantity])
 - Order Cases - считает кол-во случаев покупок(заказов). Рассчитывается по формуле: DISTINCTCOUNT(AW_Sales[OrderNumber])
 Order Target = [Prev Month Orders]*1.1
 - Prev Month Orders - считает кол-во случаев заказов (покупок) за предыдущий месяц. Рассчитывается по формуле: CALCULATE([Order Cases], -DATEADD(AW_Calendar_Lookup[Date], -1, MONTH))
